@@ -7,7 +7,7 @@ using namespace std;
 
 int Linearsearch(int m[],int size,int item)   // int *m also work
 {
-    for(int i=0;i<b;i++)
+    for(int i=0;i<size;i++)
     {
         if(m[i]==item)
         {
@@ -24,14 +24,14 @@ int main()
 {
     //int a[10]= {10,20,30,40,50,60,70,80,90,1};
     int b ;
-    cout<< "enter size : ";
+    cout<< "enter size of your array : ";
     cin>>b;
 
     int *a = new int[b];
     //int *a = (int*)malloc(b*sizeof(b));
     //int *a = (int*)calloc(b,sizeof(b));    // same
 
-    cout<<"Enter element of the array: "<<endl;
+    cout<<"Enter element of the array : "<<endl;
     for(int i=0;i<b;i++)
     {
         cin>>a[i];
@@ -63,5 +63,6 @@ int main()
     return 0;
 
 }
+
 
 
